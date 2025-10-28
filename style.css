@@ -1,44 +1,86 @@
+/* Основен стил */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #f9f9f9;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #fff;
   color: #111;
 }
 
+/* Хедър */
 header {
   background-color: #000;
   color: #fff;
-  padding: 10px 0;
   text-align: center;
+  padding: 15px 0;
   font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.5px;
 }
 
+/* Навигация */
 nav {
   background-color: #111;
   text-align: center;
-  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 15px;
 }
 
 nav a {
-  color: #d2a24c;
+  color: #d4af37; /* златист цвят */
   text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: normal;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #fff;
+  color: #ffffff;
 }
 
-section {
-  padding: 40px;
+/* Основно съдържание */
+main {
+  padding: 40px 20px;
   text-align: center;
 }
 
+.hero h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.intro {
+  margin-top: 40px;
+}
+
+.intro h2 {
+  color: #000;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* Футър */
 footer {
   background-color: #000;
   color: #fff;
   text-align: center;
-  padding: 15px;
-  font-size: 0.9em;
+  padding: 20px 10px;
+  font-size: 14px;
+  line-height: 1.5;
 }
