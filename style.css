@@ -11,16 +11,19 @@ header {
   background-color: #000;
   color: #fff;
   text-align: center;
-  padding: 15px 0;
+  padding: 20px 0;
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 0.5px;
+  border-bottom: 3px solid #d4af37; /* златна линия разделя header и менюто */
 }
 
 /* Навигация */
 nav {
   background-color: #111;
   text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #222;
 }
 
 nav ul {
@@ -31,7 +34,7 @@ nav ul {
 
 nav li {
   display: inline-block;
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
 nav a {
@@ -39,7 +42,6 @@ nav a {
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
-  letter-spacing: normal;
   transition: color 0.3s ease;
 }
 
@@ -73,6 +75,23 @@ main {
   color: #000;
   font-size: 22px;
   margin-bottom: 10px;
+}
+
+/* Бутон */
+button, a.button {
+  background-color: #d4af37;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+button:hover, a.button:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 /* Футър */
