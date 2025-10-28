@@ -1,4 +1,4 @@
-/* Основен стил */
+/* Глобален стил */
 body {
   margin: 0;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -6,49 +6,41 @@ body {
   color: #111;
 }
 
-/* Хедър – черна лента с логото */
+/* Хедър */
 header {
   background-color: #000;
   color: #fff;
   text-align: center;
-  padding: 25px 0 15px 0;
+  padding: 25px 0 20px 0;
+  border-bottom: 3px solid #d4af37; /* златна линия под логото */
+}
+
+.logo {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 0.5px;
-  border-bottom: 4px solid #d4af37; /* ясно видима златна линия */
 }
 
 /* Навигация */
 nav {
   background-color: #111;
   text-align: center;
-  padding: 12px 0;
-  margin-top: 0; /* премахва залепването */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.5); /* лека сянка за разделяне */
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  display: inline-block;
-  margin: 0 20px;
+  padding: 14px 0;
+  border-bottom: 3px solid #d4af37;
 }
 
 nav a {
-  color: #d4af37; /* златист текст */
+  color: #d4af37;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
+  margin: 0 18px;
+  font-weight: bold;
   transition: color 0.3s ease, border-bottom 0.3s ease;
-  border-bottom: 2px solid transparent;
   padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
   color: #fff;
   border-bottom: 2px solid #d4af37;
 }
@@ -79,24 +71,6 @@ main {
   color: #000;
   font-size: 22px;
   margin-bottom: 10px;
-}
-
-/* Бутон */
-button, a.button {
-  background-color: #d4af37;
-  color: #000;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-button:hover, a.button:hover {
-  background-color: #000;
-  color: #fff;
 }
 
 /* Футър */
